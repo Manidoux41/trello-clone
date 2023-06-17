@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'export',
   images: {
-    domains: ['links.papareact.com'],
+    unoptimized:true,
   }
 }
 
