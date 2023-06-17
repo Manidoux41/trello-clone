@@ -8,11 +8,12 @@ function Board() {
   }, [])
 
   return (
-    <DragDropContext>
+    <DragDropContext onDragEnd={() => console.log('onDragEnd')}>
       <Droppable droppableId='board' direction='horizontal'>
         {(provided) => (
-          <div>
-            {/* rendering all the colums hello there */}
+          <div {...provided.droppableProps} ref={provided.innerRef}>
+            rendering all the columns
+            {provided.placeholder}
           </div>
         )}
       </Droppable>
