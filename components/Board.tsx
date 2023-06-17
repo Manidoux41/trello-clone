@@ -1,10 +1,12 @@
-'use client';
-
 import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 
 function Board() {
+  const onDragEnd = (result: any) => {
+    // TODO: handle drag end
+  };
+
   return (
-    <DragDropContext>
+    <DragDropContext onDragEnd={onDragEnd}>
       <Droppable droppableId='board' direction='horizontal'>
         {(provided) => (
           <div>
@@ -16,4 +18,4 @@ function Board() {
   )
 }
 
-export default Board
+export default Board;
