@@ -10,7 +10,7 @@ function Board() {
       <Droppable droppableId='board' direction='horizontal'>
         {(provided) => (
           <div>
-            {/* rendering all the colums */}
+            {/* rendering all the colums hello there */}
           </div>
         )}
       </Droppable>
