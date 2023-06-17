@@ -1,13 +1,14 @@
 'use client';
+import { useEffect } from 'react';
 import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 
 function Board() {
-  const onDragEnd = (result: any) => {
-    // TODO: handle drag end
-  };
+  useEffect(() => {
+    //getBoard();
+  }, [])
 
   return (
-    <DragDropContext onDragEnd={onDragEnd}>
+    <DragDropContext>
       <Droppable droppableId='board' direction='horizontal'>
         {(provided) => (
           <div>
