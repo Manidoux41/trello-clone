@@ -1,3 +1,4 @@
+'use client';
 import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 
 function Board() {
